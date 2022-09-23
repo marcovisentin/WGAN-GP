@@ -3,7 +3,7 @@ Example of greyscale WGAN-GP (GAN with Wasserstein Gradient Penalty Loss). To tr
 
 Edit params file to personalise:
 
-- params['save_name'] = path to save directory/n
+- params['save_name'] = path to save directory
 - params['data_path'] = dataset path. IT NEEDS TO BE A NPZ FILE [SIZE_DATASETxHEIGHT*WIDTHx1].
 - params['buffer_size'] = dataset size (default 60000)
 - params['batch_size'] = bacth size (default 32)
