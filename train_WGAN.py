@@ -153,16 +153,17 @@ class Trainer():
 
 
 # RUN
-from params import params
-import argparse
+if __name__ == '__main__':
+    from params import params
+    import argparse
 
-parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=''' 
+    parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=''' 
 
-    WGAN training
+        WGAN training
 
-    ''')
+        ''')
 
-args = parser.parse_args()
+    args = parser.parse_args()
 
-tr = Trainer(params)
-tr.train()
+    tr = Trainer(params)
+    tr.train()
